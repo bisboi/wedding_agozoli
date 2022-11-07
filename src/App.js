@@ -8,18 +8,18 @@ function App() {
         <button id="menu" type="button">
           MENÜ
         </button>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Már nagyon várjuk, hogy mind ott legyünk Á-tól Z-ig az esküvőnkön!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Ági & Zoli
-        </a>
+        <div className="cover">
+          <img
+            className="main-pic"
+            src="images/agozoli_1.jpg"
+            alt="agozoli_1"
+          />
+          <div className="pic-text">
+            <h2>
+              Már nagyon várjuk, hogy mind ott legyünk Á-tól Z-ig az esküvőnkön!
+            </h2>
+          </div>
+        </div>
       </header>
       <section className="Content-holder">
         <div className="Greet">
@@ -32,7 +32,7 @@ function App() {
             Miután meggyőződtünk arról, hogy nekünk együtt a legjobb, a sikeres
             folytatás érdekében 2023. Június 23-án összeházasodunk. Reméljük,
             hogy velünk osztozol e nagy nap örömeiben és megtisztelsz minket
-            jelenléteddel a ceremónián, majd az azt követő dínom-dánomon. Miután
+            jelenléteddel a ceremónián, majd az azt követő dínom-dánomon.
           </h4>
           <hr />
         </div>
