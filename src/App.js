@@ -1,15 +1,16 @@
 import './App.css';
 import React, { useState } from 'react';
 import Menu from './components/Menu';
+import Test from './components/Test';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const menuOpenerHandler = () => {
+  const menuHandler = () => {
     setIsMenuOpen(true);
   };
 
-  const closeMenuOpenerHandler = () => {
+  const closeMenuHandler = () => {
     setIsMenuOpen(false);
   };
 
@@ -17,11 +18,11 @@ function App() {
     <div className="App">
       <header className="App-header">
         {!isMenuOpen && (
-          <button className="menu" type="button" onClick={menuOpenerHandler}>
+          <button className="menu" type="button" onClick={menuHandler}>
             MENÜ
           </button>
         )}
-        {isMenuOpen && <Menu onClose={closeMenuOpenerHandler}></Menu>}
+        {isMenuOpen && <Test onClose={closeMenuHandler}></Test>}
         <div className="cover">
           <img
             className="main-pic"
