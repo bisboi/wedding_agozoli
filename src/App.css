@@ -12,15 +12,24 @@ button {
   left: 25px;
   width: 50px;
   height: 20px;
+  padding: 15px;
+  background-color: azure;
 }
 
 .pic-text {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   bottom: 25px;
-  width: 80%;
+  width: 85%;
   height: 140px;
-  left: 45px;
-  right: 25px;
+  left: 25px;
+  background-color: azure;
+  background-blend-mode: color;
+  padding: 5px;
+  opacity: 50%;
 }
 
 .App {
@@ -55,18 +64,6 @@ button {
 
 .Content-holder {
   width: 35%;
-  padding: 10%;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  padding: 2%;
+  background-color: azure;
 }

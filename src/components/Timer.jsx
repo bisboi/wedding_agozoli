@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
+import './Timer.css';
 
 const SECOND = 1000;
 const MINUTE = SECOND * 60;
