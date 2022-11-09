@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useState } from 'react';
 import Menu from './components/Menu';
+import Timer from './components/Timer';
 
 /*import Test from './components/Test';*/
 
@@ -40,6 +41,8 @@ function App() {
       <section className="Content-holder">
         <div id="hello" className="Greet">
           <h1>HELLO ÁGNES!</h1>
+          <Timer deadline="June, 23, 2023" />
+
           <h2>
             Friday, June 23, 2023 Budapest, Magyarország 228 Days 0 Hrs 42 Mins
           </h2>
@@ -96,7 +99,7 @@ function App() {
           <p>-TBD-</p>
         </div>
         <hr />
-        <div id="deressCode" className="content">
+        <div id="dressCode" className="content">
           <h2>Dress code</h2>
           <p>-Formal-</p>
         </div>
