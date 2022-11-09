@@ -1,12 +1,27 @@
 import './App.css';
+import React, { useState } from 'react';
+import Menu from './components/Menu';
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const menuOpenerHandler = () => {
+    setIsMenuOpen(true);
+  };
+
+  const closeMenuOpenerHandler = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <div className="App">
       <header className="App-header">
-        <button id="menu" type="button">
-          MENÜ
-        </button>
+        {!isMenuOpen && (
+          <button className="menu" type="button" onClick={menuOpenerHandler}>
+            MENÜ
+          </button>
+        )}
+        {isMenuOpen && <Menu onClose={closeMenuOpenerHandler}></Menu>}
         <div className="cover">
           <img
             className="main-pic"
@@ -21,7 +36,7 @@ function App() {
         </div>
       </header>
       <section className="Content-holder">
-        <div className="Greet">
+        <div id="hello" className="Greet">
           <h1>HELLO ÁGNES!</h1>
           <h2>
             Friday, June 23, 2023 Budapest, Magyarország 228 Days 0 Hrs 42 Mins
@@ -35,7 +50,7 @@ function App() {
           </h4>
           <hr />
         </div>
-        <div className="content">
+        <div id="program" className="content">
           <h2>Program</h2>
           <ul>
             <li>Vendégvárás 16:00 órától a Hangár Bisztóban</li>
@@ -43,12 +58,12 @@ function App() {
           </ul>
           <hr />
         </div>
-        <div className="content">
+        <div id="date" className="content">
           <h2>Dátum</h2>
           <p>-2023. Június 23-</p>
           <hr />
         </div>
-        <div className="content">
+        <div id="location" className="content">
           <h2>Helyszín</h2>
           <p>
             Hangár Bisztró (megközelítés: autóval vagy a Kolosy tértől közösen
@@ -56,27 +71,27 @@ function App() {
           </p>
           <hr />
         </div>
-        <div className="content">
+        <div id="food" className="content">
           <h2>Menü</h2>
           <p>-TBD-</p>
         </div>
         <hr />
-        <div className="content">
+        <div id="deressCode" className="content">
           <h2>Dress code</h2>
           <p>-Formal-</p>
         </div>
         <hr />
-        <div className="content">
+        <div id="gift" className="content">
           <h2>Nászajándék</h2>
           <p>-Pénzeket adjatok-</p>
         </div>
         <hr />
-        <div className="content">
+        <div id="hotel" className="content">
           <h2>Szállás</h2>
           <p>-Rotter Lajos Turistaház-</p>
         </div>
         <hr />
-        <div className="content">
+        <div id="feedback" className="content">
           <h2>Visszajelzés</h2>
           <p>
             Kérünk téged, hogy legkésőbb május 23-ig jelezz vissza az alábbi

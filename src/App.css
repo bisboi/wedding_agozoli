@@ -1,4 +1,8 @@
-#menu {
+html {
+  scroll-behavior: smooth;
+}
+
+.menu {
   position: absolute;
   top: 25px;
   left: 25px;
@@ -11,7 +15,7 @@
   bottom: 25px;
   width: 80%;
   height: 140px;
-  left: 25px;
+  left: 45px;
   right: 25px;
 }
 
