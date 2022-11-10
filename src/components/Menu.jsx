@@ -4,9 +4,10 @@ import './Menu.css';
 function Menu(props) {
   return (
     <div className="open-menu">
-      <button onClick={props.onClose} type="button">
+      <button id="X" onClick={props.onClose} type="button">
         X
       </button>
+
       <a href="#hello">Hello!</a>
       <a href="#program">Program</a>
       <a href="#date">Dátum</a>

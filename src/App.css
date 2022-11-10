@@ -2,15 +2,23 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 h1,
 h2 {
   font-family: 'Domine', serif;
 }
 
-h4,
+h3,
 p,
 li {
   font-family: 'Ropa Sans', sans-serif;
+}
+
+p {
+  font-size: 1.2rem;
 }
 
 button {
@@ -68,16 +76,17 @@ button {
   background-color: azure;
   background-blend-mode: color;
   padding: 5px;
-  opacity: 50%;
+  opacity: 75%;
   border-radius: 25px;
 }
 
 .App {
-  display: flex;
-  flex-direction: row;
+  /* display: flex;
+  flex-direction: row; */
   text-align: center;
   width: 100%;
   min-height: 1000px;
+  float: left;
 }
 
 .cover {
@@ -91,6 +100,7 @@ button {
 }
 
 .App-header {
+  float: left;
   background-color: azure;
   height: 100vh;
   display: flex;
@@ -106,6 +116,22 @@ button {
   width: 35%;
   padding: 2%;
   background-color: azure;
+  float: left;
+  padding-bottom: 15%;
+}
+@media screen and (max-width: 980px) {
+  .App-header {
+    width: 100%;
+    position: relative;
+  }
+
+  .Content-holder {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
 
 #separator {
@@ -116,7 +142,6 @@ button {
 
 #separator-2 {
   position: absolute;
-  top: 550px;
   right: 25px;
   opacity: 50%;
   transform: rotate(90deg);
@@ -125,15 +150,15 @@ button {
 }
 #separator-3 {
   position: absolute;
-  top: 1750px;
+
   opacity: 50%;
 }
 
 #separator-4 {
   position: absolute;
-  top: 2050px;
   right: 25px;
   opacity: 50%;
+  bottom: 1525px;
   transform: rotate(-5deg);
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
@@ -141,4 +166,8 @@ button {
 
 hr {
   width: 35%;
+}
+
+#location {
+  padding: 5px;
 }
