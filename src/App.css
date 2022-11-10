@@ -35,17 +35,24 @@ button {
 @keyframes pulse {
   from {
     background-color: azure;
-    width: 50px;
   }
   50% {
     background-color: bisque;
-    width: 50px;
   }
 
   to {
     background-color: azure;
-    width: 50px;
   }
+}
+
+.content {
+  border-radius: 25px;
+  padding: 5px;
+}
+
+.content:hover {
+  animation-name: pulse;
+  animation-duration: 1s;
 }
 
 .pic-text {
@@ -120,7 +127,6 @@ button {
   position: absolute;
   top: 1750px;
   opacity: 50%;
-  transform: rotate(-25deg);
 }
 
 #separator-4 {

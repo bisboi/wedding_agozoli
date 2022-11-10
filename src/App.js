@@ -39,7 +39,7 @@ function App() {
         </div>
       </header>
       <section className="Content-holder">
-        <div id="hello" className="Greet">
+        <div id="hello" className="content">
           <h1>HELLO NÉP!</h1>
           <div id="separator">
             <img src="./images/olajag.webp" alt="olajag" />

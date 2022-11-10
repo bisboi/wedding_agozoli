@@ -20,21 +20,16 @@
 
 @keyframes open-menu-pulse {
   from {
-    width: 50px;
-    height: 20px;
     background-color: azure;
     width: 150px;
   }
 
   50% {
     background-color: bisque;
-    width: 300px;
   }
 
   to {
     background-color: azure;
-    width: 150px;
-    height: 240px;
   }
 }
 
@@ -43,6 +38,7 @@
   text-decoration: none;
   color: inherit;
   opacity: 75%;
+  border-radius: 15px;
 }
 
 .open-menu > a:hover {
