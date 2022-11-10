@@ -2,9 +2,21 @@ html {
   scroll-behavior: smooth;
 }
 
+h1,
+h2 {
+  font-family: 'Domine', serif;
+}
+
+h4,
+p,
+li {
+  font-family: 'Ropa Sans', sans-serif;
+}
+
 button {
   all: unset;
   cursor: pointer;
+  font-family: 'Domine', serif;
 }
 .menu {
   position: absolute;
@@ -14,6 +26,26 @@ button {
   height: 20px;
   padding: 15px;
   background-color: azure;
+  border-radius: 15px;
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: 5;
+}
+
+@keyframes pulse {
+  from {
+    background-color: azure;
+    width: 50px;
+  }
+  50% {
+    background-color: bisque;
+    width: 50px;
+  }
+
+  to {
+    background-color: azure;
+    width: 50px;
+  }
 }
 
 .pic-text {
@@ -23,13 +55,14 @@ button {
   justify-content: center;
   align-items: center;
   bottom: 25px;
-  width: 85%;
+  width: 93%;
   height: 140px;
   left: 25px;
   background-color: azure;
   background-blend-mode: color;
   padding: 5px;
   opacity: 50%;
+  border-radius: 25px;
 }
 
 .App {
@@ -51,7 +84,7 @@ button {
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: azure;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -66,4 +99,40 @@ button {
   width: 35%;
   padding: 2%;
   background-color: azure;
+}
+
+#separator {
+  position: absolute;
+  top: 250p;
+  opacity: 50%;
+}
+
+#separator-2 {
+  position: absolute;
+  top: 550px;
+  right: 25px;
+  opacity: 50%;
+  transform: rotate(90deg);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+#separator-3 {
+  position: absolute;
+  top: 1750px;
+  opacity: 50%;
+  transform: rotate(-25deg);
+}
+
+#separator-4 {
+  position: absolute;
+  top: 2050px;
+  right: 25px;
+  opacity: 50%;
+  transform: rotate(-5deg);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+hr {
+  width: 35%;
 }

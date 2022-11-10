@@ -41,6 +41,9 @@ function App() {
       <section className="Content-holder">
         <div id="hello" className="Greet">
           <h1>HELLO NÉP!</h1>
+          <div id="separator">
+            <img src="./images/olajag.webp" alt="olajag" />
+          </div>
           <Timer deadline="June, 23, 2023" />
 
           <hr />
@@ -66,6 +69,9 @@ function App() {
           <hr />
         </div>
         <div id="location" className="content">
+          <div id="separator-2">
+            <img src="./images/olajag.webp" alt="olajag" />
+          </div>
           <h2>Helyszín</h2>
           <p>
             Hangár Bisztró (megközelítés: autóval vagy a Kolosy tértől közösen
@@ -100,6 +106,9 @@ function App() {
           <h2>Dress code</h2>
           <p>-Formal-</p>
         </div>
+        <div id="separator-3">
+          <img src="./images/olajag.webp" alt="olajag" />
+        </div>
         <hr />
         <div id="gift" className="content">
           <h2>Nászajándék</h2>
@@ -120,6 +129,9 @@ function App() {
           <a href="https://forms.gle/3UHTZsSs8zeiToa69">
             https://forms.gle/3UHTZsSs8zeiToa69
           </a>
+          <div id="separator-4">
+            <img src="./images/olajag.webp" alt="olajag" />
+          </div>
         </div>
       </section>
     </div>
