@@ -5,6 +5,22 @@ import Timer from './components/Timer';
 
 /*import Test from './components/Test';*/
 
+import Img1 from 'images/agozoli_1.jpg';
+import Img2 from 'images/agozoli_2.jpg';
+
+export const ImageData = [
+  {
+    ImageNo: '1/2',
+    ImageName: 'mountains',
+    ImageSrc: Img1,
+  },
+  {
+    ImageNo: '2/2',
+    ImageName: 'img_nature',
+    ImageSrc: Img2,
+  },
+];
+
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
