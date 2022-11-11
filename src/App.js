@@ -2,21 +2,17 @@ import './App.css';
 import React, { useState } from 'react';
 import Menu from './components/Menu';
 import Timer from './components/Timer';
-
+import ImageSliderAuto from './components/ImageSliderAuto';
 /*import Test from './components/Test';*/
 
-import Img1 from 'images/agozoli_1.jpg';
-import Img2 from 'images/agozoli_2.jpg';
+import Img1 from './components/images/agozoli_1.jpg';
+import Img2 from './components/images/agozoli_2.jpg';
 
 export const ImageData = [
   {
-    ImageNo: '1/2',
-    ImageName: 'mountains',
     ImageSrc: Img1,
   },
   {
-    ImageNo: '2/2',
-    ImageName: 'img_nature',
     ImageSrc: Img2,
   },
 ];
@@ -42,11 +38,12 @@ function App() {
         )}
         {isMenuOpen && <Menu onClose={closeMenuHandler}></Menu>}
         <div className="cover">
-          <img
+          {/* <img
             className="main-pic"
             src="images/agozoli_1.jpg"
             alt="agozoli_1"
-          />
+          /> */}
+          <ImageSliderAuto ImageData={ImageData} SlideInterValTime={5000} />
           <div className="pic-text">
             <h2>
               Már nagyon várjuk, hogy mind ott legyünk Á-tól Z-ig az esküvőnkön!
