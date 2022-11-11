@@ -43,7 +43,7 @@ function App() {
             src="images/agozoli_1.jpg"
             alt="agozoli_1"
           /> */}
-          <ImageSliderAuto ImageData={ImageData} SlideInterValTime={5000} />
+          <ImageSliderAuto ImageData={ImageData} SlideInterValTime={10000} />
           <div className="pic-text">
             <h2>
               Már nagyon várjuk, hogy mind ott legyünk Á-tól Z-ig az esküvőnkön!
