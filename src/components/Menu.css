@@ -12,15 +12,17 @@ button {
   top: 25px;
   left: 25px;
   width: 150px;
-  height: 300px;
+  height: 330px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   background-color: azure;
-  padding: 20px;
+  padding-top: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
   border-radius: 15px;
   pointer-events: auto;
-  gap: 5px;
+
   animation-name: open-menu-pulse;
   animation-duration: 1s;
   animation-iteration-count: 1;
@@ -43,7 +45,9 @@ button {
 }
 
 .open-menu > a {
-  gap: 15px;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 100%;
   text-decoration: none;
   color: inherit;
   opacity: 60%;
@@ -55,6 +59,10 @@ button {
   background-color: bisque;
   width: 100%;
   opacity: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   animation-name: growth;
   animation-duration: 0.5s;
 }
