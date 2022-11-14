@@ -54,37 +54,48 @@ function App() {
       <section className="Content-holder">
         <div id="hello" className="content">
           <h1>HELLO NÉP!</h1>
-          <div id="separator">
-            <img src="./images/olajag.webp" alt="olajag" />
-          </div>
-          <Timer deadline="June, 23, 2023" />
 
-          <hr />
+          <Timer deadline="June, 23, 2023" />
+        </div>
+        <div className="image-holder">
+          <img src="./images/HR_jobb.jpg" alt="olajag" />
+        </div>
+        <div className="content">
           <h3>
             Miután meggyőződtünk arról, hogy nekünk együtt a legjobb, a sikeres
             folytatás érdekében 2023. Június 23-án összeházasodunk. Reméljük,
             hogy velünk osztozol e nagy nap örömeiben és megtisztelsz minket
             jelenléteddel a ceremónián, majd az azt követő dínom-dánomon.
           </h3>
-          <hr />
+        </div>
+        <div className="image-holder b">
+          <img src="./images/HR_jobb.jpg" alt="olajag" />
         </div>
         <div id="program" className="content">
           <h2>Program</h2>
           <ul>
-            <li>Vendégvárás 16:00 órától a Hangár Bisztóban</li>
-            <li> Polgári esküvő: 17:00-kor a Gückler Károly kilátónál</li>
+            <li>17:00 vendégvárás</li>
+            <li>18:15 ceremónia</li>
+            <li>18:45 fotózás és gratulációk</li>
+            <li>20:00 vacsora</li>
+            <li>21:30 nyitótánc</li>
+            <li>23:00 tortavágás</li>
+            <li>23:30 menyecsketánc</li>
+            <li>Tánc hajnalig</li>
           </ul>
-          <hr />
         </div>
+        <div className="image-holder">
+          <img src="./images/HR_jobb.jpg" alt="olajag" />
+        </div>
+
         <div id="date" className="content">
           <h2>Dátum</h2>
           <p>-2023. Június 23-</p>
-          <hr />
+        </div>
+        <div className="image-holder b">
+          <img src="./images/HR_jobb.jpg" alt="olajag" />
         </div>
         <div id="location" className="content">
-          <div id="separator-2">
-            <img src="./images/olajag.webp" alt="olajag" />
-          </div>
           <h2>Helyszín</h2>
           <p>
             Hangár Bisztró (megközelítés: autóval vagy a Kolosy tértől közösen
@@ -100,31 +111,55 @@ function App() {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
-          <hr />
+        </div>
+        <div className="image-holder">
+          <img src="./images/HR_jobb.jpg" alt="olajag" />
         </div>
         <div id="food" className="content">
           <h2>Menü</h2>
           <p>-TBD-</p>
         </div>
-        <hr />
+        <div className="image-holder b">
+          <img src="./images/HR_jobb.jpg" alt="olajag" />
+        </div>
+
         <div id="dressCode" className="content">
           <h2>Dress code</h2>
-          <p>-Formal-</p>
+          <p>
+            Esküvőnket elegáns, ünnepi keretek között szeretnénk megünnepelni,
+            ezért kérünk téged, hogy te is ilyen öltözetben gyere és hagyd meg a
+            tipikus esküvői színek viselését nekünk.
+          </p>
+          <p>
+            Bátran pattintsátok ki magatokat, mert mi is szuper csinosban
+            leszünk. It's time to shine!
+          </p>
         </div>
-        <div id="separator-3">
-          <img src="./images/olajag.webp" alt="olajag" />
+
+        <div className="image-holder">
+          <img src="./images/HR_jobb.jpg" alt="olajag" />
         </div>
-        <hr />
+
         <div id="gift" className="content">
           <h2>Nászajándék</h2>
-          <p>-Pénzeket adjatok-</p>
+          <p>
+            Mindennek örülünk, ami egy borítékba belefér! A menyecsketáncra
+            pedig kérlek, ne készülj külön, bízunk abban, hogy mellénk áll a
+            szerencse így kérlek egy sorsjegyet dobj majd a kalapba.{' '}
+          </p>
         </div>
-        <hr />
+        <div className="image-holder b">
+          <img src="./images/HR_jobb.jpg" alt="olajag" />
+        </div>
+
         <div id="hotel" className="content">
           <h2>Szállás</h2>
           <p>-Rotter Lajos Turistaház-</p>
         </div>
-        <hr />
+        <div className="image-holder">
+          <img src="./images/HR_jobb.jpg" alt="olajag" />
+        </div>
+
         <div id="feedback" className="content">
           <h2>Visszajelzés</h2>
           <p>
@@ -134,9 +169,6 @@ function App() {
           <a href="https://forms.gle/3UHTZsSs8zeiToa69">
             https://forms.gle/3UHTZsSs8zeiToa69
           </a>
-          <div id="separator-4">
-            <img src="./images/olajag.webp" alt="olajag" />
-          </div>
         </div>
       </section>
     </div>

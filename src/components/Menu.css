@@ -1,3 +1,9 @@
+body {
+  --main: #f8f7f5;
+  --secondary: #b08047;
+  --text: #373d3b;
+}
+
 button {
   font-family: 'Domine', serif;
 }
@@ -5,6 +11,11 @@ button {
 #X {
   margin-bottom: 8px;
   aspect-ratio: 1;
+  animation-name: open-menu-pulse;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  padding: 10px;
+  border-radius: 15px;
 }
 
 .open-menu {
@@ -16,12 +27,13 @@ button {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: azure;
-  padding-top: 15px;
+  background-color: var(--main);
+  /* padding-top: 15px;
   padding-left: 5px;
   padding-bottom: 8px;
-  padding-right: 5px;
+  padding-right: 5px; */
   border-radius: 15px;
+  cursor: pointer;
 
   animation-name: open-menu-pulse;
   animation-duration: 1s;
@@ -31,16 +43,15 @@ button {
 
 @keyframes open-menu-pulse {
   from {
-    background-color: azure;
-    width: 150px;
+    background-color: var(--main);
   }
 
   50% {
-    background-color: bisque;
+    background-color: var(--secondary);
   }
 
   to {
-    background-color: azure;
+    background-color: var(--main);
   }
 }
 
@@ -52,16 +63,21 @@ button {
   color: inherit;
   opacity: 60%;
   border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .open-menu > a:hover {
   text-decoration: none;
-  background-color: bisque;
+  background-color: var(--secondary);
   width: 100%;
   opacity: 100%;
+  font-weight: bold;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   animation-name: growth;
   animation-duration: 0.5s;
@@ -70,12 +86,12 @@ button {
 
 @keyframes growth {
   from {
-    background-color: azure;
+    background-color: var(--main);
     width: 25%;
     opacity: 60%;
   }
   to {
-    background-color: bisque;
+    background-color: var(--secondary);
     width: 100%;
     opacity: 100%;
   }
