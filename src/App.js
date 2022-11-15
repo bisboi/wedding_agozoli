@@ -38,11 +38,6 @@ function App() {
         )}
         {isMenuOpen && <Menu onClose={closeMenuHandler}></Menu>}
         <div className="cover">
-          {/* <img
-            className="main-pic"
-            src="images/agozoli_1.jpg"
-            alt="agozoli_1"
-          /> */}
           <ImageSliderAuto ImageData={ImageData} SlideInterValTime={10000} />
           <div className="pic-text">
             <h2>
