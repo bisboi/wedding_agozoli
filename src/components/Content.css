@@ -99,6 +99,16 @@ img {
   padding: 5px;
 }
 
+.list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.list > p {
+  margin-bottom: 5px;
+}
+
 .content:hover {
   animation-name: pulse;
   animation-duration: 1s;

@@ -27,16 +27,32 @@ function Content() {
         </div>
         <div id="program" className="content">
           <h2>Program</h2>
-          <ul>
-            <li>17:00 vendégvárás</li>
-            <li>18:15 ceremónia</li>
-            <li>18:45 fotózás és gratulációk</li>
-            <li>20:00 vacsora</li>
-            <li>21:30 nyitótánc</li>
-            <li>23:00 tortavágás</li>
-            <li>23:30 menyecsketánc</li>
-            <li>Tánc hajnalig</li>
-          </ul>
+          <div className="list">
+            <p>
+              <b> 17:00</b> Vendégvárás
+            </p>
+            <p>
+              <b>18:15</b> Ceremónia
+            </p>
+            <p>
+              <b>18:45</b> Fotózás és gratulációk
+            </p>
+            <p>
+              <b>20:00</b> Vacsora
+            </p>
+            <p>
+              <b>21:30</b> Nyitótánc
+            </p>
+            <p>
+              <b>23:00</b> Tortavágás
+            </p>
+            <p>
+              <b>23:30</b> Menyecsketánc
+            </p>
+            <p>
+              <b>Tánc hajnalig</b>
+            </p>
+          </div>
         </div>
         <div className="image-holder">
           <img src="./images/HR_jobb.jpg" alt="olajag" />
@@ -44,7 +60,7 @@ function Content() {
 
         <div id="date" className="content">
           <h2>Dátum</h2>
-          <p>-2023. Június 23-</p>
+          <p>2023. Június 23</p>
         </div>
         <div className="image-holder b">
           <img src="./images/HR_jobb.jpg" alt="olajag" />
@@ -71,7 +87,7 @@ function Content() {
         </div>
         <div id="food" className="content">
           <h2>Menü</h2>
-          <p>-TBD-</p>
+          <p>TBD</p>
         </div>
         <div className="image-holder b">
           <img src="./images/HR_jobb.jpg" alt="olajag" />
@@ -108,7 +124,7 @@ function Content() {
 
         <div id="hotel" className="content">
           <h2>Szállás</h2>
-          <p>-Rotter Lajos Turistaház-</p>
+          <p>Rotter Lajos Turistaház</p>
         </div>
         <div className="image-holder">
           <img src="./images/HR_jobb.jpg" alt="olajag" />
