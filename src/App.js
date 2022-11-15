@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState } from 'react';
+import React from 'react';
 import Menu from './components/Menu';
 import ImageSliderAuto from './components/ImageSliderAuto';
 /*import Test from './components/Test';*/
@@ -18,25 +18,10 @@ export const ImageData = [
 ];
 
 function App() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const menuHandler = () => {
-    setIsMenuOpen(true);
-  };
-
-  const closeMenuHandler = () => {
-    setIsMenuOpen(false);
-  };
-
   return (
     <div className="App">
       <header className="App-header">
-        {!isMenuOpen && (
-          <button className="menu" type="button" onClick={menuHandler}>
-            MENÜ
-          </button>
-        )}
-        {isMenuOpen && <Menu onClose={closeMenuHandler}></Menu>}
+        <Menu />
         <div className="cover">
           <ImageSliderAuto ImageData={ImageData} SlideInterValTime={10000} />
           <div className="pic-text">
@@ -46,7 +31,7 @@ function App() {
           </div>
         </div>
       </header>
-      <Content></Content>
+      <Content />
     </div>
   );
 }

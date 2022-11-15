@@ -2,7 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+:root {
   --main: #f8f7f5;
   --secondary: #b08047;
   --text: #373d3b;
@@ -14,26 +14,6 @@ body {
 
 h1 {
   font-family: 'Domine', serif;
-}
-
-button {
-  all: unset;
-  cursor: pointer;
-  font-family: 'Domine', serif;
-  background-color: var(--main);
-}
-.menu {
-  position: absolute;
-  top: 25px;
-  left: 25px;
-  width: 50px;
-  height: 20px;
-  padding: 15px;
-  background-color: var(--main);
-  border-radius: 15px;
-  animation-name: pulse;
-  animation-duration: 2s;
-  animation-iteration-count: 5;
 }
 
 .pic-text {
