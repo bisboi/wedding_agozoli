@@ -1,0 +1,105 @@
+body {
+  --main: #f8f7f5;
+  --secondary: #b08047;
+  --text: #373d3b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Domine', serif;
+}
+
+h3,
+p,
+li {
+  font-family: 'Ropa Sans', sans-serif;
+}
+
+img {
+  width: 30%;
+  height: auto;
+}
+
+@keyframes pulse {
+  from {
+    background-color: var(--main);
+  }
+  50% {
+    background-color: #b08047;
+  }
+
+  to {
+    background-color: var(--main);
+  }
+}
+
+.content {
+  border-radius: 25px;
+  padding: 5px;
+  font-family: 'Domine', serif;
+  min-width: 80%;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.Content-holder {
+  width: 35%;
+  padding: 2%;
+  background-color: var(--main);
+  float: left;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  color: #373d3b;
+}
+@media screen and (max-width: 980px) {
+  .App-header {
+    width: 100%;
+    position: relative;
+  }
+
+  .Content-holder {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+.image-holder {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 300px;
+}
+
+.b {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+#separator-4 {
+  position: absolute;
+  right: 25px;
+  opacity: 50%;
+  bottom: 1525px;
+  transform: rotate(-5deg);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+#location {
+  padding: 5px;
+}
+
+.content:hover {
+  animation-name: pulse;
+  animation-duration: 1s;
+}
