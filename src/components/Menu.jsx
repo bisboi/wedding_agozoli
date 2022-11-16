@@ -17,6 +17,11 @@ function Menu(props) {
       href: '#program',
       label: 'Program',
     },
+
+    {
+      href: '#date',
+      label: 'Dátum',
+    },
     {
       href: '#location',
       label: 'Helyszín',
@@ -28,6 +33,18 @@ function Menu(props) {
     {
       href: '#dressCode',
       label: 'Dress code',
+    },
+    {
+      href: '#gift',
+      label: 'Nászajándék',
+    },
+    {
+      href: '#hotel',
+      label: 'Szállás',
+    },
+    {
+      href: '#feedback',
+      label: 'Visszajelzés',
     },
   ];
 

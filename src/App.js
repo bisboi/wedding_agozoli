@@ -4,8 +4,12 @@ import Menu from './components/Menu';
 import ImageSliderAuto from './components/ImageSliderAuto';
 /*import Test from './components/Test';*/
 
-import Img1 from './components/images/agozoli_1.jpg';
-import Img2 from './components/images/agozoli_2.jpg';
+import Img1 from './components/images/kep_1.jpg';
+import Img2 from './components/images/kep_2.jpg';
+import Img3 from './components/images/kep_3.jpg';
+import Img4 from './components/images/kep_4.jpg';
+import Img5 from './components/images/kep_5.jpg';
+import Img6 from './components/images/kep_6.jpg';
 import Content from './components/Content';
 
 export const ImageData = [
@@ -14,6 +18,22 @@ export const ImageData = [
   },
   {
     ImageSrc: Img2,
+  },
+
+  {
+    ImageSrc: Img3,
+  },
+
+  {
+    ImageSrc: Img4,
+  },
+
+  {
+    ImageSrc: Img5,
+  },
+
+  {
+    ImageSrc: Img6,
   },
 ];
 
