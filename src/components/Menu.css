@@ -25,6 +25,10 @@
   animation-iteration-count: 1;
 }
 
+.Menu.Menu--open:hover {
+  animation-play-state: paused;
+}
+
 .Menu__Button {
   display: flex;
   justify-content: center;
